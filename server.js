@@ -131,7 +131,7 @@ else if(loginData.expression) {
 }
   linfo.findOne({email: loginData.email, password:loginData.pw}).exec().then((data) => {
     if (data) {
-        if (data._id == "6370626046815a0a552cdec9") {
+        if (data._id == "6397a51a42fb0bb9bd25ab10") {
             res.render("dashboard", { email: loginData.email, password: loginData.pw, layout: false });
             return;
         } 
